@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="./js/jquery.min.js"></script> 
+	<script> 
+		$(function(){
+			$("#includeNav").load("nav.html"); 
+		});
+	</script> 
+	<script> 
+		$(function(){
+			$("#includeFooter").load("footer.html"); 
+		});
+	</script>	
+	
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Latest compiled and minified CSS -->
+    <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"-->
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>APNET 2018</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-inner">
+        <h1>2<sup>nd</sup> Asia-Pacific Workshop on Networking (APNet 2018)</h1>
+        <h2>August 2-3 2018, Beijing, China</h2>
+      </div>
+    </header>
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <div class="row">
+			<div id="includeNav"></div>
+			<section id="main-content">
+			
+            <h1>APNet SIGCOMM (China) Talks</h1>
+			
+			<div style="background-color:#eaeaea; margin:2em 0;border-radius:10px; height:auto;">
+              <div style="padding:20px; padding-right:15px; width:26%; float:left;">
+              <img style="border-style: solid;border-width: 4px;border-color: #ffffff;" src="images/tong-yang.jpg" />
+              </div>
+
+              <div style="padding:1em 1em;text-align:left;">
+              <h2></a><a href="http://net.pku.edu.cn/~yangtong/">Tong Yang</a></h2>
+              <p style="text-align:left;font-size:12pt">Research Assistant Professor at Peking University</p>
+              <h2>Paper Title:</h2>
+              <p style="text-align:left;font-size:12pt">Elastic Sketch: Adaptive and Fast Network-wide Measurements</p>
+              </div>
+            </div>
+			
+			<p><b>Authors</b>: Tong Yang, Jie Jiang, Peng Liu (PKU, China), Qun Huang (CAS, China), Junzhi Gong, Yang Zhou (PKU, China), Rui Miao (USC, USA), Xiaoming Li (PKU, China), Steve Uhlig (QMUL, UK)</p>
+						  
+			<p><b>Abstract:</b> When network is undergoing problems such as congestion, scan attack, DDoS attack, etc., measurements are much more important than usual. In this case, traffic characteristics including available bandwidth, packet rate, and flow size distribution vary drastically, significantly degrading the performance of measurements. To address this issue, we propose the Elastic sketch. It is adaptive to currently traffic characteristics. Besides, it is generic to measurement tasks and platforms. We implement the Elastic sketch on six platforms: P4, FPGA, GPU, CPU, multi-core CPU, and OVS, to process six typical measurement tasks. Experimental results and theoretical analysis show that the Elastic sketch can adapt well to traffic characteristics. Compared to the state-of-the-art, the Elastic sketch achieves 44.6 ~ 45.2 times faster speed and 2.0 ~ 273.7 smaller error rate.</p>
+			
+			<p><b>Speaker Bio:</b> Tong Yang received his PhD degree in Computer Science from Tsinghua University in 2013. He visited Institute of Computing Technology, Chinese Academy of Sciences (CAS) China from 2013.7 to 2014.7. Now he is a research assistant professor in Computer Science Department, Peking University. His research interests include network measurements, sketches, IP lookups, Bloom filters, and KV stores. He published papers in SIGCOMM, SIGKDD, SIGMOD, SIGCOMM CCR, VLDB, ATC, ToN, ICDE, INFOCOM, etc.</p>
+
+			<div style="background-color:#eaeaea; margin:2em 0;border-radius:10px; height:auto;">
+              <div style="padding:20px; padding-right:15px; width:28%; float:left;">
+              <img style="border-style: solid;border-width: 4px;border-color: #ffffff;" src="images/li-chen.jpg" />
+              </div>
+
+              <div style="padding:1em 1em;text-align:left;">
+              <h2></a><a href="https://li-ch.github.io/resume/">Li Chen</a></h2>
+              <p style="text-align:left;font-size:12pt">Senior Software Engineer at Tencent</p>
+              <h2>Paper Title:</h2>
+              <p style="text-align:left;font-size:12pt">AuTO: Scaling Deep Reinforcement Learning to Enable Datacenter-Scale Automatic Traffic Optimization</p>
+              </div>
+            </div>
+			
+			<p><b>Authors</b>: Li Chen, Justinas Lingys, Kai Chen (HKUST, China), Feng Liu (SAIC, China)</p>
+						  
+			<p><b>Abstract:</b> Traffic optimizations (TO, e.g. flow scheduling, load balancing) in datacenters are difficult online decision-making problems. Previously, they are done with heuristics relying on operators’ understanding of the workload and environment. Designing and implementing proper TO algorithms thus take at least weeks. Encouraged by recent successes in applying deep reinforcement learning (DRL) techniques to solve complex online control problems, we study if DRL can be used for automatic TO without human-intervention. However, our experiments show that the latency of current DRL systems cannot handle flow-level TO at the scale of current datacenters, because short flows (which constitute the majority of traffic) are usually gone before decisions can be made.
+			Leveraging the long-tail distribution of datacenter traffic, we develop a two-level DRL system, AuTO, mimicking the Peripheral & Central Nervous Systems in animals, to solve the scalability problem. Peripheral Systems (PS) reside on end-hosts, collect flow information, and make TO decisions locally with minimal delay for short flows. PS’s decisions are informed by a Central System (CS), where global traffic information is aggregated and processed. CS further makes individual TO decisions for long flows. With CS&PS, AuTO is an end-to-end automatic TO system that can collect network information, learn from past decisions, and perform actions to achieve operator-defined goals. We implement AuTO with popular machine learning frameworks and commodity servers, and deploy it on a 32-server testbed. Compared to existing approaches, AuTO reduces the TO turn-around time from weeks to ~100 milliseconds while achieving superior performance. For example, it demonstrates up to 48.14% reduction in average flow completion time (FCT) over existing solutions.</p>
+			
+			<p><b>Speaker Bio:</b> Li Chen is working on topics in the intersection of AI and networking. He received his PhD in HKUST and joined Datacenter Networking team at Tencent in 2018. He is a Microsoft Research Asia PhD Fellow, and his network acceleration subsystems and scheduling algorithms have seen deployment in Big Data systems in Huawei and Tencent.</p>
+
+			<div style="background-color:#eaeaea; margin:2em 0;border-radius:10px; height:auto;">
+              <div style="padding:20px; padding-right:15px; width:28%; float:left;">
+              <img style="border-style: solid;border-width: 4px;border-color: #ffffff;" src="images/qun-huang.jpg" />
+              </div>
+
+              <div style="padding:1em 1em;text-align:left;">
+              <h2></a><a href="https://huangqundl.github.io">Qun Huang</a></h2>
+              <p style="text-align:left;font-size:12pt">Associate Professor at ICT, CAS</p>
+              <h2>Paper Title:</h2>
+              <p style="text-align:left;font-size:12pt">SketchLearn: Relieving User Burdens in Approximate Measurement with Automated Statistical Inference</p>
+              </div>
+            </div>
+			
+			<p><b>Authors</b>: Qun Huang (CAS, China), Patrick P. C. Lee (CUHK, China), Yungang Bao (CAS, China)</p>
+						  
+			<p><b>Abstract:</b> Network measurement is challenged to fulfill stringent resource requirements in the face of massive network traffic. While approximate measurement can trade accuracy for resource savings, it demands intensive manual efforts to configure the right resource-accuracy trade-offs in real deployment. Such user burdens are caused by how existing approximate measurement approaches inherently deal with resource conflicts when tracking massive network traffic with limited resources. In particular, they tightly couple resource configurations with accuracy parameters, so as to provision sufficient resources to bound the measurement errors. We design SketchLearn, a novel sketch-based measurement framework that resolves resource conflicts by learning their statistical properties to eliminate conflicting traffic components. We prototype SketchLearn on OpenVSwitch and P4, and our testbed experiments and stress-test simulation show that SketchLearn accurately and automatically monitors various traffic statistics and effectively supports network-wide measurement with limited resources.</p>
+			
+			<p><b>Speaker Bio:</b> Qun Huang is an Associate Professor at Institute of Computing Technology, Chinese Academy of Sciences (ICT-CAS), supported by CAS Pioneer Hundred Talents Program. Before joining ICT, he was a Researcher at Huawei Future Network Theory Lab in Hong Kong for two years. He got his Ph.D. degree in August 2015 from The Chinese University of Hong Kong.</p>
+
+			<div style="background-color:#eaeaea; margin:2em 0;border-radius:10px; height:auto;">
+              <div style="padding:20px; padding-right:15px; width:28%; float:left;">
+              <img style="border-style: solid;border-width: 4px;border-color: #ffffff;" src="images/yao-peng.jpg" />
+              </div>
+
+              <div style="padding:1em 1em;text-align:left;">
+              <h2></a><a href="http://ist.nwu.edu.cn/home/index/article/mid/5358/id/206209.html">Yao Peng</a></h2>
+              <p style="text-align:left;font-size:12pt">Associate Professor at Northwest University, China</p>
+              <h2>Paper Title:</h2>
+              <p style="text-align:left;font-size:12pt">PLoRa: A Passive Long-Range Data Network from Ambient LoRa Transmissions</p>
+              </div>
+            </div>
+			
+			<p><b>Authors</b>: Yao Peng (NWU, China), Longfei Shangguan (Princeton, USA), Yue Hu, Yujie Qian, Xianshang Lin, Xiaojiang Chen, Dingyi Fang (NWU, China), Kyle Jamieson (Princeton, USA)</p>
+						  
+			<p><b>Abstract:</b> The next-generation Internet of Things (IoT) envisions ubiquitous, cheap, and low data-rate connectivity among humans, machines, and objects, for example, a farmer could remotely monitor nutrition levels in a field; a biologist could keep track of wild animal movement, group formulation and population demographics. A key to this vision is the wireless communication technology that enables extremely impoverished IoT devices to continuously exchange low-rate data. Ideally, such wireless communication should satisfy the following three requirements: battery-free, long-range and ambient excitation signal. Realizing these visions require addressing three significant challenges: proper packet detection, modulation and tightly power constraints. First, since the tag is battery-free, it should consume an ultra-low amount of power during which it is idle, listening to detect an incoming ambient information packet. Second, as the excitation signal that conveys data and change over time, it is thus challenging to modulate this time-varying excitation signal into another standard ambient signal for backscatter. Third, given the large energy demands of the computational and communication tasks, the battery-free tag will soon drain its energy and stop working, which will cause complete loss of data stored in its volatile memory. In this talk, I will present PLoRa, an ambient backscatter design that enables long-range wireless connectivity for battery-less IoT devices. PLoRa takes ambient LoRa transmissions as the excitation signals, conveys data by modulating an excitation signal into a new standard LoRa “chirp” signal, and shifts this new signal to a different LoRa channel to be received at a gateway faraway. Our experimental results demonstrate that our prototype PCB PLoRa tag can backscatter an ambient LoRa transmission sent from a nearby LoRa node to a gateway up to 1.1 km away, and deliver 284 bytes data every 24 minutes indoors, or every 17 minutes outdoors.</p>
+			
+			<p><b>Speaker Bio:</b> Yao Peng is an associate professor at college of information science and technology, Northwest University, China. She received her PHD in Microelectronics and Solid-state Electronics from Xidian University. Her research interests include VLSI design, high-performance and lower-power MP-SoC design and passive perception IoT. As the head and coordinators of projects, he worked on 5 research projects from Postdoctoral Science Foundation, the International Cooperation Foundation of Shaanxi Province, etc. She has published a series of papers in renowned conferences and international and domestic journals such as SIGCOMM, IEEE Communications Magazine, Multimedia Tools & Applications, and the Journal of Electronic Information.</p>
+
+			<div style="background-color:#eaeaea; margin:2em 0;border-radius:10px; height:auto;">
+              <div style="padding:20px; padding-right:15px; width:28%; float:left;">
+              <img style="border-style: solid;border-width: 4px;border-color: #ffffff;" src="images/li-li.jpg" />
+              </div>
+
+              <div style="padding:1em 1em;text-align:left;">
+              <h2></a>Li Li</h2>
+              <p style="text-align:left;font-size:12pt">Senior Researcher in 2012 Labs of Huawei</p>
+              <h2>Paper Title:</h2>
+              <p style="text-align:left;font-size:12pt">A Measurement Study on Multi-path TCP with Multiple Cellular Carriers on High Speed Rails</p>
+              </div>
+            </div>
+			
+			<p><b>Authors</b>: Li Li, Ke Xu (Tsinghua, China), Tong Li, Kai Zheng (Huawei, China), Chunyi Peng (Purdue, USA), Dan Wang (PolyU, China), Xiangxiang Wang (Tsinghua, China), Meng Shen (BIT, China), Rashid Mijumbi (Nokia, Ireland)</p>
+						  
+			<p><b>Abstract:</b> Recent advances in high speed rails (HSRs) are propelling the need for acceptable network service in high speed mobility environments. However, previous studies show that the performance of traditional single-path transmission degrades significantly during high speed mobility due to frequent handoff. Multi-path transmission with multiple carriers is a promising way to enhance performance, because at any time, there is possibly at least one path not suffering a handoff. In this paper, for the first time, we measure multi-path TCP with two cellular carriers on HSRs with a peak speed of 310km/h. We find a significant difference in handoff time between the two carriers. Moreover, we observe that MPTCP can provide much better performance than TCP in the poorer of the two paths. This indicates that MPTCP's robustness to handoff is much higher than TCP's. However, the efficiency of MPTCP is far from satisfactory. MPTCP can only achieve a performance comparable to, or sometimes worse than TCP in the better path. We find that the low efficiency can be attributed to poor adaptability to frequent handoff by MPTCP's key operations in sub-flow establishment, congestion control and scheduling. Finally, we discuss possible directions for improving MPTCP for such scenarios.</p>
+			
+			<p><b>Speaker Bio:</b> Li Li received his B.S. degree from the School of Computer Science of Wuhan University, Hubei, China in 2012 and his Ph.D. degree from the Department of Computer Science and Technology of Tsinghua University, Beijing, China in 2017. He held a visiting researcher position with the School of Computer Science and Electronic Engineering of University of Essex, Colchester, UK. He is now working as a senior researcher in 2012 Labs of Huawei. His research interests include network protocols, cloud/edge computing, network virtualization and resource management, network science, and P2P system.</p>
+			
+          </section>
+        </div>
+      </div>
+
+	  <div id="includeFooter"></div>
+	</div>
+    </body>
+</html>
