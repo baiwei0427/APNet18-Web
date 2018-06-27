@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="./js/jquery.min.js"></script> 
+	<script> 
+		$(function(){
+			$("#includeNav").load("nav.html"); 
+		});
+	</script> 
+	<script> 
+		$(function(){
+			$("#includeFooter").load("footer.html"); 
+		});
+	</script>	
+	
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Latest compiled and minified CSS -->
+    <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"-->
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>APNET 2018</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-inner">
+        <h1>2<sup>nd</sup> Asia-Pacific Workshop on Networking (APNet 2018)</h1>
+        <h2>August 2-3 2018, Beijing, China</h2>
+      </div>
+    </header>
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <div class="row">
+			<div id="includeNav"></div>
+			<section id="main-content">
+			
+            <h1>Industry Talks</h1>
+			
+			<div style="background-color:#eaeaea; margin:2em 0;border-radius:10px; height:auto;">
+              <div style="padding:20px; padding-right:15px; width:26%; float:left;">
+              <img style="border-style: solid;border-width: 4px;border-color: #ffffff;" src="images/cx.jpg" />
+              </div>
+
+              <div style="padding:1em 1em;text-align:left;">
+              <h2><a href="http://sysnetome.com/">Chuanxiong Guo</a></h2>
+              <p style="text-align:left;font-size:12pt">Director of the AI Lab of Bytedance Inc</p>
+              <h2>Talk Title:</h2>
+              <p style="text-align:left;font-size:12pt">Toward Highly-Available Cloud Systems</p>
+              </div>
+            </div>
+
+			<p><b>Abstract:</b> IT companies around the globe are building large-scale cloud systems to meet the demands of an increasing number of cloud computing services. These cloud systems, however, can be brought down to their knees, by a large number, sometimes high profile, incidents. These incidents reduce cloud system availability and cost companies’ money, brand reputation, and team moral.<br/> 
+			In this talk, I will present my on-going journey of building highly-available cloud systems, from measurement and monitoring, to failure localization and understanding, and to automatic mitigation and intervene. The goal of this journey is to build highly-available systems that recover from failures when they happen, and that avoid avoidable failures by learning from the past. </p>
+			
+			<p><b>Speaker Bio:</b> Chuanxiong Guo is a director of the AI Lab of Bytedance Inc. He is currently working on data center networking and machine learning systems.</p>
+
+			<div style="background-color:#eaeaea; margin:2em 0;border-radius:10px; height:auto;">
+              <div style="padding:20px; padding-right:15px; width:26%; float:left;">
+              <img style="border-style: solid;border-width: 4px;border-color: #ffffff;" src="images/larry.jpeg" />
+              </div>
+
+              <div style="padding:1em 1em;text-align:left;">
+              <h2><a href="https://www.linkedin.com/in/layong-larry-luo-20060339/">Layong Luo</a></h2>
+              <p style="text-align:left;font-size:12pt">Expert Engineer (T4) at Tencent</p>
+              <h2>Talk Title:</h2>
+              <p style="text-align:left;font-size:12pt">Towards Converged SmartNIC Architecture for Bare Metal and Public Clouds at Tencent Scale</p>
+              </div>
+            </div>
+
+			<p><b>Abstract:</b> Current wisdom of building cloud-scale data center networks is host SDN philosophy, i.e., design to scale out by distributing billions of SDN policies (e.g., VPC overlay, security group, ACL, SLB and NAT) to millions of end hosts. However, with fast increase of NIC speed and SDN policies, and unfortunately with slow increase of CPU performance, pure software based host SDN stack won't be able to keep up very soon. In the coming post Moore's Law world, specialization/hardware acceleration seems to be the only way left to close the gap between host SDN performance and NIC speed in the long run.<br/>
+			In this talk, I will present Tencent's practice about network acceleration based on SmartNIC. Specifically, I will explain SmartNIC motivation, use cases in both bare metal and public clouds, and our vision to converge the SmartNIC architecture for bare metal and public clouds in the future. In the end, I will share our experience of building hardware from scratch in Internet company like Tencent.</p>
+			
+			<p><b>Speaker Bio:</b> Layong (Larry) Luo is an expert engineer in Tencent, leading the SmartNIC project and cloud network planning in the network platform department of TEG. Prior to joining Tencent, he was a senior software engineer and tech lead in Microsoft Azure Networking, working on SmartNIC based network acceleration. Before that, he was a network researcher in Microsoft Research Asia, with research focus on data center networks, middlebox/NFV as a service, RDMA, FPGA OS, and SmartNIC. Larry obtained his Ph.D. in computer architecture from Institute of Computing Technology, Chinese Academy of Science, and his Ph.D. research was all about hardware accelerated network systems.  Larry values hands-on experience as much as research vision. He has not only published many research papers in top-tier network conferences such as SIGCOMM, INFOCOM, CoNEXT, and ATC, but also built a lot of high-performance network systems from hardware (schematic design, PCB layout, board manufacturing, and FPGA design) to software (driver, kernel network stack and application).</p>
+
+			<div style="background-color:#eaeaea; margin:2em 0;border-radius:10px; height:auto;">
+              <div style="padding:20px; padding-right:15px; width:26%; float:left;">
+              <img style="border-style: solid;border-width: 4px;border-color: #ffffff;" src="images/lihua.jpeg" />
+              </div>
+
+              <div style="padding:1em 1em;text-align:left;">
+              <h2><a href="https://www.linkedin.com/in/lyuan/">Lihua Yuan</a></h2>
+              <p style="text-align:left;font-size:12pt">Partner Software Engineering Manager at Microsoft</p>
+              <h2>Talk Title:</h2>
+              <p style="text-align:left;font-size:12pt">SONiC: Software for Open Networking in the Cloud</p>
+              </div>
+            </div>
+
+			<p><b>Abstract:</b> SONiC is an open source network operating system that is widely deployed in Microsoft Azure data center as well as many partner companies. It leverages the industrial standard Switch Abstraction Interface (SAI) to work across switch ASICs from multiple companies. It features a modular design with containers. In this talk, I will present the high-level design of SONiC, share the experiences we learned from developing SONiC and deploying SONiC at scale.</p>
+			
+			<p><b>Speaker Bio:</b> Lihua Yuan is a Partner Dev Manager in Microsoft Azure Networking team. He currently leads the software automation team that manages of entire life cycle of Microsoft data center network. His team has contributed both SONiC and SAI to the Open Compute Project.</p>
+
+			<div style="background-color:#eaeaea; margin:2em 0;border-radius:10px; height:auto;">
+              <div style="padding:20px; padding-right:15px; width:26%; float:left;">
+              <img style="border-style: solid;border-width: 4px;border-color: #ffffff;" src="images/jim.jpeg" />
+			  <img style="border-style: solid;border-width: 4px;border-color: #ffffff;" src="images/edwin.jpeg" />
+              </div>
+				
+              <div style="padding:1em 1em;text-align:left;">
+			  <h2><a href="https://www.linkedin.com/in/jimstleger/">Jim St. Leger</a></h2>
+              <p style="text-align:left;font-size:12pt">Marketing Manager at Intel</p>
+			  <br/>
+              <h2><a href="https://www.linkedin.com/in/edwin-verplanke-a786002/">Edwin Verplanke</a></h2>
+              <p style="text-align:left;font-size:12pt">Solution Architect at Intel</p>
+			  <br/>
+              <h2>Talk Title:</h2>
+              <p style="text-align:left;font-size:12pt">Unlocking general purposes processors to boost packet processing performance</p>
+              </div>
+            </div>
+
+			<p><b>Abstract:</b> Fixed Network Functions are rapidly transitioning from discrete appliances into Virtual Network Functions, this is driving the need to more efficiently consolidate compute, storage and communications workloads on a general purpose server platform. This presentation reviews advancements made in CPU and platform technology that enable developers to efficiently migrate communications workloads from discrete appliances to standard server platforms. Intel’s skylake microarchitecture and I/O subsystems will be reviewed from a packet processing perspective. We will also review new functionality that has been added to the DataPlane Development  Kit in order to truly unlock the packet processing capabilities of the platform.</p>
+			
+			<p><b>Speaker Bio:</b> TBA</p>
+			
+			<div style="background-color:#eaeaea; margin:2em 0;border-radius:10px; height:auto;">
+              <div style="padding:20px; padding-right:15px; width:26%; float:left;">
+              <img style="border-style: solid;border-width: 4px;border-color: #ffffff;" src="images/ming.jpeg" />
+              </div>
+
+              <div style="padding:1em 1em;text-align:left;">
+              <h2></a><a href="https://www.linkedin.com/in/ming-zhang-2110241/">Ming Zhang</a></h2>
+              <p style="text-align:left;font-size:12pt">Principal Engineer at Alibaba Group</p>
+              <h2>Talk Title:</h2>
+              <p style="text-align:left;font-size:12pt">Self-driving networks</p>
+              </div>
+            </div>
+
+			<p><b>Abstract:</b> TBA</p>
+			
+			<p><b>Speaker Bio:</b> Ming Zhang is a Principal Engineer in Alibaba Group where he leads the development of automation systems that keep Alibaba’s global networks running reliably, efficiently and at scale. His work spans from capacity planning to automatic deployment, configurations, troubleshooting, failure recovery, and traffic engineering. Before joining Alibaba, he was a Senior Researcher at Microsoft Research Redmond for 10 years, during which time he delivered multiple key technologies that power the massive cloud networks of Microsoft Azure. He receives his PhD in computer science from Princeton University in 2005 and B.S. from Nanjing University in 1999.</p>
+			
+          </section>
+        </div>
+      </div>
+
+	  <div id="includeFooter"></div>
+	</div>
+    </body>
+</html>
