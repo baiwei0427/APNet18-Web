@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="./js/jquery.min.js"></script> 
+	<script> 
+		$(function(){
+			$("#includeNav").load("nav.html"); 
+		});
+	</script> 
+	<script> 
+		$(function(){
+			$("#includeFooter").load("footer.html"); 
+		});
+	</script>	
+	
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Latest compiled and minified CSS -->
+    <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"-->
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>APNET 2018</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-inner">
+        <h1>2<sup>nd</sup> Asia-Pacific Workshop on Networking (APNet 2018)</h1>
+        <h2>August 2-3 2018, Beijing, China</h2>
+      </div>
+    </header>
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <div class="row">
+			<div id="includeNav"></div>
+			<section id="main-content">
+			
+            <h1>Keynote Talk</h1>
+			
+			<div style="background-color:#eaeaea; margin:2em 0;border-radius:10px; height:auto;">
+              <div style="padding:20px; padding-right:15px; width:26%; float:left;">
+              <img style="border-style: solid;border-width: 4px;border-color: #ffffff;" src="images/zhili.jpg" />
+              </div>
+
+              <div style="padding:1em 1em;text-align:left;">
+              <h2><a href="http://www-users.cs.umn.edu/~zhang089/">Zhi-li Zhang</a></h2>
+              <p style="text-align:left;font-size:12pt">Professor at University of Minnesota</p>
+              <h2>Talk Title:</h2>
+              <p style="text-align:left;font-size:12pt">Towards Self-Running Networks? Some Thoughts on the Role of Machine Learning/AI in Future Networking </p>
+              </div>
+            </div>
+
+			<p><b>Abstract:</b> Thanks to the rise of web, today's Internet is primarily an information (or content) delivery platform. Vast cloud computing infrastructures with huge data centers at the backend and geographically dispersed content distribution networks at the frontend/edge have evolved to support massive information delivery services.  The diversity and complexity of the Internet applications and networked systems  have rendered managing and evolving today's networks to meet users' quality-of-experience (QoE) expectations an extremely challenging task. Software-defined networking  (SDN) and network function virtualization (NFV) –  two new trends in networking –  have recently emerged to partly address these issues. These have further given rise to the bold vision of “self-running” or “self-driving” networks.  In this talk, we will highlight some of our research work on applying machine learning techniques to manage complex networks as well as on advancing the state-of-art in SDN and NFV. Based on our experience in applying machine learning and AI techniques in network management, we will share some personal thoughts on the challenges and initial steps we may take in working towards the vision of “self-running” networks.</p>
+			
+			<p><b>Speaker Bio:</b> Zhi-Li Zhang received Ph.D. degrees  in computer science from the University of Massachusetts.  He joined the faculty of the Department of Computer Science and Engineering at the University of Minnesota in 1997, where  he is currently the McKnight Distinguished University Professor and  Qwest Chair Professor in Telecommunications. He currently also serves as the Associate Director for Research at the Digital Technology Center, University of Minnesota. Prof. Zhang's research interests lie broadly in computer and communication networks, Internet technology, multimedia systems and content distribution networks, cyber-physical systems and Internet-of-Things, and (applied) machine learning and data mining. Prof. Zhang has published more than 100 journal and conference/workshop papers, many of them in top venues in networking and related fields. He is co-recipient of several Best Papers awards including IEEE INFOCOM, ICNP and ACM SIGMETRICS. Prof. Zhang has chaired the program committees of several major conferences in networking including IEEE INFOCOM, ACM SIGMETRICS, IEEE ICNP and ACM Internet Measurement Conference (IMC), and served on the Editorial Board of several journals such as IEEE/ACM Transactions on Networking, ACM TOMPECS, and PACM MACS. He is a Fellow of IEEE. </p>
+			
+          </section>
+        </div>
+      </div>
+
+	  <div id="includeFooter"></div>
+	</div>
+    </body>
+</html>
